@@ -4,6 +4,10 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 /** Basic styling */
 body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
+@media screen and (max-width: 600px) { .logo-svg { margin-top: 25px; width: 100% !important; } }
+
+@media screen and (max-width: 480px) { .logo-svg { margin-top: 25px; width: 100% !important; } }
+
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
 
@@ -50,6 +54,12 @@ code { padding: 1px 5px; }
 pre { padding: 8px 12px; overflow-x: auto; }
 
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
+
+/*
+Header full
+
+*/
+.header-full { display: flex; flex-direction: column; align-items: center; justify-content: center; }
 
 /** Wrapper */
 .wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
@@ -115,41 +125,23 @@ table td { border: 1px solid #e8e8e8; }
 
 @media screen and (max-width: 600px) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
 
-/** Page content */
-.page-content { padding: 30px 0; flex: 1; }
+.float-right { float: right; height: 300px; width: 300px; }
 
-.page-heading { font-size: 32px; }
+@media screen and (max-width: 480px) { .para-image { display: flex; flex-direction: column; margin-bottom: 20px; } .float-right { float: none; height: 200px; width: 100% !important; margin: 10px auto; display: block; } /** Page content */ .page-content { padding: 30px 0; flex: 1; height: 100%; } .page-heading { font-size: 32px; } .post-list-heading { font-size: 28px; } .post-list { margin-left: 0; list-style: none !important; } .post-list > li { margin-bottom: 30px; } .post-meta { font-size: 14px; color: #828282; } .post-link { display: block; font-size: 24px; } /** Posts */ .post-header { margin-bottom: 30px; } .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; font-weight: 600; } }
 
-.post-list-heading { font-size: 28px; }
+@media screen and (max-width: 480px) and (max-width: 800px) { .post-title { font-size: 36px; } }
 
-.post-list { margin-left: 0; list-style: none; }
+@media screen and (max-width: 480px) { .post-content { min-height: 400px; margin-bottom: 30px; } .post-content h2 { font-size: 32px; } }
 
-.post-list > li { margin-bottom: 30px; }
+@media screen and (max-width: 480px) and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
 
-.post-meta { font-size: 14px; color: #828282; }
+@media screen and (max-width: 480px) { .post-content h3 { font-size: 26px; } }
 
-.post-link { display: block; font-size: 24px; }
+@media screen and (max-width: 480px) and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
 
-/** Posts */
-.post-header { margin-bottom: 30px; }
+@media screen and (max-width: 480px) { .post-content h4 { font-size: 20px; } }
 
-.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
-
-@media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
-
-.post-content { margin-bottom: 30px; }
-
-.post-content h2 { font-size: 32px; }
-
-@media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
-
-.post-content h3 { font-size: 26px; }
-
-@media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
-
-.post-content h4 { font-size: 20px; }
-
-@media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+@media screen and (max-width: 480px) and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
