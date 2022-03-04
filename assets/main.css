@@ -62,7 +62,7 @@ Header full
 .header-full { display: flex; flex-direction: column; align-items: center; justify-content: center; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; margin: 10px; }
 
 @media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
@@ -85,8 +85,36 @@ table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-c
 
 table td { border: 1px solid #e8e8e8; }
 
+.post-title { width: 100%; text-align: center; display: flex; flex-direction: column; justify-content: center; }
+
+.contact { height: 100%; width: 100%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; padding: 0; }
+
+.leading-text, .slugline { width: 100vw; text-align: center; }
+
+.confirm { display: flex; flex-direction: row; margin-bottom: auto; margin-top: auto; align-items: flex-start; }
+
+.page-content { display: flex !important; flex-direction: column; justify-content: center; align-items: center !important; }
+
+.contact-form { height: max-content; width: 80%; background-color: #F3F3F3; margin-left: auto; margin-right: auto; display: block; margin-top: 25px; padding: 16px; padding-bottom: 25px !important; }
+
+#message { height: 100px !important; }
+
+#message, #name, #phone, #email, #web { margin: 8px; height: 30px; width: 100%; margin-right: 40px; display: block; margin-left: auto; margin-right: auto; }
+
+#hiring { line-height: 1; display: inline-flex; height: 16px; width: 16px; text-align: center; vertical-align: center; margin-right: 4px; }
+
+.red { color: red; }
+
+.u { text-decoration: underline; }
+
+.send { display: inline-flex; align-items: center; line-height: 1.2; border: none; background-color: #FAE800; padding: 0.7em 1em; font-size: 1.25em; cursor: pointer; font-weight: 500; margin-block-start: 20px; }
+
+.send::after { background-image: url(); }
+
+.h-card { display: flex; justify-content: center; align-items: center; }
+
 /** Site header */
-.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; }
+.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; display: flex; align-items: center; justify-content: center; }
 
 .site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
@@ -127,7 +155,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .float-right { float: right; height: 300px; width: 300px; }
 
-@media screen and (max-width: 480px) { .para-image { display: flex; flex-direction: column; margin-bottom: 20px; } .float-right { float: none; height: 200px; width: 100% !important; margin: 10px auto; display: block; } /** Page content */ .page-content { padding: 30px 0; flex: 1; height: 100%; } .page-heading { font-size: 32px; } .post-list-heading { font-size: 28px; } .post-list { margin-left: 0; list-style: none !important; } .post-list > li { margin-bottom: 30px; } .post-meta { font-size: 14px; color: #828282; } .post-link { display: block; font-size: 24px; } /** Posts */ .post-header { margin-bottom: 30px; } .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; font-weight: 600; } }
+@media screen and (max-width: 480px) { .para-image { display: flex; flex-direction: column; margin-bottom: 20px; } .float-right { float: none; height: 200px; width: 100% !important; margin: 10px auto; display: block; } .h-card { display: flex; flex-direction: column; justify-content: center; align-items: center; } /** Page content */ .page-content { padding: 30px 0; flex: 1; height: 100%; display: flex !important; justify-content: center !important; } .page-heading { font-size: 32px; } .post-list-heading { font-size: 28px; } .post-list { margin-left: 0; list-style: none !important; } .post-list > li { margin-bottom: 30px; } .post-meta { font-size: 14px; color: #828282; } .post-link { display: block; font-size: 24px; } /** Posts */ .post-header { margin-bottom: 30px; } .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; font-weight: 600; } }
 
 @media screen and (max-width: 480px) and (max-width: 800px) { .post-title { font-size: 36px; } }
 

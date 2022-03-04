@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 <meta property="og:title" content="Get in touch" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Chef BillyWrite an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Chef BillyWrite an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 <link rel="canonical" href="http://localhost:4000/contact/" />
 <meta property="og:url" content="http://localhost:4000/contact/" />
 <meta property="og:site_name" content="Chef Billy" />
@@ -16,7 +14,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Get in touch" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Chef BillyWrite an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Get in touch","url":"http://localhost:4000/contact/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"Get in touch","url":"http://localhost:4000/contact/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Chef Billy" /></head>
 
@@ -93,7 +91,7 @@
     <h1 class="post-title">Get in touch</h1>
   </header>
 
-  <div class="post-content">
+  <!--  <div class="post-content">
     <style>
     .on-contact {
         border-bottom: 1px solid black !important;
@@ -104,11 +102,78 @@
         }
     .page-content {
         min-height: 400px !important;
+       
     }
 </style>
 
 
-  </div>
+  </div> -->
+
+
+  <main class="contact">
+
+    <div class="slugline" style="width: 100% !important;">
+        <h3 style="    align-items: center;
+        width: 100%;
+        display: flex;">Want me to cook for you? Or with you? Fill the form!!</h3>
+    </div>
+
+    <div class="contact-form">
+        <form action="">
+            <label for="about-you">
+                <legend>
+                    <h3 class="u" id="about-you">
+                        About You
+                    </h3>
+                </legend>                
+            </label>
+            <br>
+            <label for="namme">
+                Your Name : <span class="red">*</span> 
+                <input type="text" id="name">
+            </label>
+            <br>
+            <label for="email">
+                Your Email : <span class="red">*</span> 
+                <input type="email" id="email">
+            </label>
+            <br>
+            <label for="phone">
+                Your Phone Number : 
+                <input type="tel" id="phone">
+            </label>
+            <br>
+            <label for="web">
+                Your Website : 
+                <input type="text" id="web">
+            </label>
+            <legend>
+                <h3 class="u">
+                    Project Details
+                </h3>
+            </legend>
+            <label for="message">
+                Message : <span class="red">*</span>
+                <textarea name="fan-message" id="message" placeholder="Enter your message here" rows="6"></textarea>
+            </label>
+            <div class="confirm">
+                <input type="checkbox" name="" id="hiring">
+                <label for="hiring">
+                    I am enquiring about hiring Billy
+                </label>
+            </div>
+        </form>
+        
+            <button class="send">
+                Send
+            </button>
+        
+
+    </div> <!--.contact-form-->
+
+
+
+</main>
 
 </article>
 
@@ -118,23 +183,51 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Chef Billy</h2>
+    <!-- <h2 class="footer-heading">Chef Billy</h2> -->
+
+    
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+        <h3 class="p-name">
+          Quick Links
+            
+        </h3>
         <ul class="contact-list">
-          <li class="p-name">Chef Billy</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+          
+            
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Recipes</a></li>
+            <li><a href="/contact">Contact</a></li><li><a class="u-email" href="mailto:chefbillyobbede@gmail.com">chefbillyobbede@gmail.com</a></li></ul>
       </div>
 
 
 
 
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+      <div class="footer-col footer-col-2">
+
+        <h3 class="p-name">
+          Find me on the socials
+            
+        </h3><ul class="social-media-list"><li><a href="https://www.twitter.com/chefbillyobbede"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">chefbillyobbede</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>Chef BillyWrite an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+
+
+        <h3 class="p-name">
+          Who am I?
+            
+        </h3>
+
+
+        <p>
+          <!----> 
+          I am a chef with over 10 years of experience in the kitchen. I develop recipes, cook for guys who dont like cooking and/or those without the time to. Would you like to reach out? Do so <a href="/contact">HERE</a>
+        
+        </p>
       </div>
     </div>
 
@@ -142,6 +235,14 @@
 
 </footer>
 <style>
+
+        .post-title {
+            font-weight: 600 !important;
+        }
+
+.on-contact {
+        border-bottom: 1px solid black !important;
+    }
 
     .page-link {
       padding: 8px;
