@@ -69,16 +69,18 @@
         </label>
 
         <div class="trigger">
-         <!----<a class="page-link" href="/about/">About</a><a class="page-link" href="/contact/">Get in touch</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/testimonials/">Testimonials</a><a class="page-link" href="/welcome/">Welcome</a>-->
+         <!----<a class="page-link" href="/about/">About</a><a class="page-link" href="/contact/">Get in touch</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/recipes/">Recipes</a><a class="page-link" href="/testimonials/">Testimonials</a><a class="page-link" href="/welcome/">Welcome</a>-->
           <a class="page-link on-home" href="/">Home</a>
 
-          <a class="page-link on-about" href="/about">About</a>
+          <a class="page-link on-about" href="/about">About me</a>
 
-          <a class="page-link on-portfolio" href="/portfolio">Portfolio</a>
+          <a class="page-link on-portfolio" href="/portfolio">My food</a>
 
-          <a class="page-link on-testimonials" href="/testimonials">Testimonials</a>
+          <a class="page-link on-testimonials" href="/testimonials">Recommendations</a>
 
-          <a class="page-link on-contact" href="/contact">Get in touch</a>
+          <a class="page-link on-recipes" href="/recipes">Recipes</a>
+
+          <a class="page-link on-contact" href="/contact">Let's eat</a>
 
         </div>
       </nav></div>
@@ -104,7 +106,7 @@
     404
   </h1>
   <p>
-    <strong>
+    <strong class="not-found">
       Page not found :(
     </strong></p>
   <p>The requested page could not be found.</p>
@@ -112,10 +114,13 @@
   <p>Maybe you would like to :</p>
 
   <div class="action-section">
-    <button>Go Home</button>
-    <button>Read Recipes</button>
+    <a href="/"  class="error-action go-home"><button>Go Home</button></a>
+    
+    <a href="/recipes" class="error-action read-recipes"><button>Read Recipes</button></a>
   </div>
 </div>
+
+<!--end-->
 
       </div>
     </main><footer class="site-footer h-card">
