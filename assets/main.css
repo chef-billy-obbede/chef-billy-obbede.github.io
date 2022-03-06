@@ -41,6 +41,8 @@ a:hover { color: #111; text-decoration: underline; }
 
 .social-media-list a:hover .username { text-decoration: underline; }
 
+.hidden { display: none; }
+
 .action-section { width: 100%; }
 
 /** Blockquotes */
@@ -71,6 +73,12 @@ Header full
 @media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 @media screen and (max-width: 480px) { .leading { background-size: cover !important; } }
+
+@media screen and (min-width: 425px) { .post-list { list-style: none !important; } }
+
+.post-list { margin: 0 !important; }
+
+.post-item { background-color: #eef; margin: 10px; cursor: pointer; padding: 10px !important; }
 
 @media screen and (max-width: 480px) { .leading { background-image: url(/images/mobile-header-bg.png); background-size: contain; width: 100%; } .leading-text { color: white; } }
 
